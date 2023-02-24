@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+</head>
+<style>
+    .box1{
+        background-color:rgb(34, 234, 214);
+        height: 500px;
+        width: 800px;
+    }
+    body div{
+        
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8%;
+        
+
+    }
+    body div h1{
+        margin-bottom: 55%;
+    }
+    @media screen and (max-width:1440px){
+     .box1{
+        background-color:rgb(29, 118, 29);
+     }
+    
+    }
+    @media screen and(min-width:1024px) and (max-width:1440px) {
+        .box1{
+            background-color:rgb(123, 92, 15);
+        }
+    }
+    @media screen and(min-width:768px) and (max-width:1024px){
+        .box1{
+            background-color:rgb(92, 191, 230);
+        }
+    }
+    @media screen and (min-width:425px) and (max-width:768px){
+        .box1{
+            background-color:rgb(135, 46, 46);
+        }
+    }
+
+</style>
+  <body>  
+    <div>
+        <div class="box1"><h1>This is a Media Query Demo Page.</h1></div>
+    </div>
+</body>
+</html>
